@@ -4,6 +4,8 @@ import store from '../store'
 import Home from '../views/Home.vue'
 import Profile from '../views/Profile.vue'
 import Admin from '../views/Admin.vue'
+import Login from '../views/Login.vue'
+import Guide from '../views/Guide.vue'
 
 const routes = [
   {
@@ -23,6 +25,16 @@ const routes = [
     meta: {
       requiresAdmin: true
     }
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login,
+  },
+  {
+    path: '/guide',
+    name: 'Guide',
+    component: Guide,
   }
 ]
 

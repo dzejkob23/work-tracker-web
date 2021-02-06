@@ -18,6 +18,8 @@
 import { computed } from 'vue';
 import { useStore } from 'vuex';
 
+import { translate } from "./translate/translations.js";
+
 export default {
   name: 'App',
   setup() {
@@ -27,6 +29,9 @@ export default {
     return {
       user
     }
+  },
+  mounted() {
+      translate()
   }
 }
 </script>
